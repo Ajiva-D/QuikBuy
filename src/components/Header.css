@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Average+Sans|Faster+One&display=swap');
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding:20px 40px;
+	font-family: 'Average Sans', sans-serif;
+}
+.logo{
+	font-family: 'Faster One', cursive;
+	font-size:30px;
+}
+a{
+	color:#000000;
+	text-decoration: none;
+
+}
+ul{
+	margin:0;
+	display: flex;
+}
+li{
+	list-style: none;
+	margin:0 15px;
+}
+.icons li{
+
+}
