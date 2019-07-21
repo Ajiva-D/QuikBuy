@@ -1,0 +1,25 @@
+.card img{
+	padding-top:5px;
+	height:200px;
+	width:250px;
+	object-fit: contain;
+}
+.card-img-con{
+	background-color: #f5f9fc;
+	padding: 0;
+	height:250px;
+}
+.card h5{
+	font-family: 'Average Sans', sans-serif;
+	font-size:1.5rem;
+}
+h5,p{
+	margin:0;
+}
+.card{
+	display: inline-block;
+	padding:0 10px;
+}
+.card p{
+	font-family: 'Changa', sans-serif;
+}
