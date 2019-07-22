@@ -12,7 +12,7 @@ const Hero = () =>{
 			<div className="empty">
 			<h1>SHOP SAVE</h1>	
 			<h1 id="h1-2">CHECKOUT</h1>
-			<div class="grid-con">
+			<div className="grid-con">
 					<img className="img1" src={vans} alt="vans"/>
 					<img className="img2" src={jean} alt="jeanjacket"/>
 					<img className="img3" src={redbag} alt="red bag"/>
@@ -23,6 +23,7 @@ const Hero = () =>{
 				<img src={herobg} alt="Img"/>
 			</div>
 		</div>
+		// 1john 3:22-23
 	);
 }
 export default Hero
