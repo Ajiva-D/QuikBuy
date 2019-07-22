@@ -82,7 +82,7 @@ class PopularItems extends Component {
 			<div >
 				<h1 style={{textAlign:"center"}}>Popular Items</h1>
 				<div style={style}>
-				{	item.map((e)=><Card img={e.img} title={e.title} amount={e.amount}/>)}
+				{	item.map((e)=><Card img={e.img} title={e.title} amount={e.amount} key={e.title}/>)}
 				</div>
 				
 			</div>
