@@ -1,12 +1,28 @@
 import React from "react";
 import "./Header.css";
 
-const Header = () => {
+class Header extends React.Component{
+	constructor(){
+		super()
+		this.state = {
+			  condition:false
+		}
+	}
+	// const showMenu = () => {
+	// const menu =	document.querySelector("nav-item-con");
+
+	// }
+	changeClass = () => this.setState({condition:!this.state.condition})
+	render(){
+
 	return (
 		<header>
 			<nav>
 				<a className="logo" href="home">QuikBuy</a>
-				<ul className="nav-item-con">
+				<div className="menu" onClick={this.changeClass}>
+				<i className="fas fa-bars"></i>
+				</div>
+				<ul className={ `nav-item-con ${this.state.condition ? "show-menu" : ""}`}>
 					<li>
 						<a href="women">WOMEN</a>
 					</li>
@@ -37,6 +53,7 @@ const Header = () => {
 			</nav>
 		</header>
 	);
+	}
 };
 
 export default Header;
