@@ -28,23 +28,61 @@ class PopularItems extends Component {
 			justifyContent:"center",
 			flexWrap:"wrap"
 		}
-		let item = []
+		let item = [{
+			img:sneakers,
+			title:"Nike Sneakers",
+			amount:3000
+		},
+		{
+			img:purpleshoes,
+			title:"Purple Sneakers",
+			amount:1000
+		},
+		{
+			img:bluebag,
+			title:"Avion Bag",
+			amount:150
+		},
+		{
+			img:blueshoe,
+			title:"Female Shoes",
+			amount:2300
+		},
+		{
+			img:girljean,
+			title:"Female Jeans",
+			amount:4300
+		},
+		{
+			img:fullamazon,
+			title:"Amazon Home",
+			amount:6500
+		},
+		{
+			img:darksneakers,
+			title:"Nike AirMax",
+			amount:1000
+		},
+		{
+			img:shinyheels,
+			title:"Glitter Heels",
+			amount:800
+		},
+		{
+			img:boyjean,
+			title:"Jean Jacket",
+			amount:300
+		},
+		{
+			img:smallamazon,
+			title:"Amazon Speaker",
+			amount:1200
+		}]
 		return (
 			<div >
 				<h1 style={{textAlign:"center"}}>Popular Items</h1>
 				<div style={style}>
-				<Card img={sneakers} title={this.state.title} amount={this.state.amount} />
-				<Card img={blueshoe} title="Army Green Heels" amount="1500" />
-				<Card img={girljean} title="Jean Jacket" amount="250" />
-				<Card img={fullamazon} title="Amazon Assistant" amount="2000" />
-				<Card img={sneakers} title={this.state.title} amount={this.state.amount} />
-				<Card img={blueshoe} title="Army Green Heels" amount="1500" />
-				<Card img={girljean} title="Jean Jacket" amount="250" />
-				<Card img={fullamazon} title="Amazon Assistant" amount="2000" />
-				<Card img={sneakers} title={this.state.title} amount={this.state.amount} />
-				<Card img={blueshoe} title="Army Green Heels" amount="1500" />
-				<Card img={girljean} title="Jean Jacket" amount="250" />
-				<Card img={fullamazon} title="Amazon Assistant" amount="2000" />
+				{	item.map((e)=><Card img={e.img} title={e.title} amount={e.amount}/>)}
 				</div>
 				
 			</div>
