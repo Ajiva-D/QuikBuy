@@ -6,16 +6,16 @@ import './Hero.css'
 // import redbag from './../images/redbag.jpg'
 // import sneakers from './../images/hotsneakers.jpg'
 import Rotate from 'react-reveal/Rotate';
-
+import Slide from 'react-reveal/Slide';
 
 const Hero = () =>{
 	return(
 		<div className="hero">
 			<div className="empty">
-				<Rotate top left>
+				<Slide left>
 				<h1>SHOP SAVE</h1>	
 				<h1 id="h1-2">CHECKOUT</h1>
-				</Rotate>
+				</Slide>
 				
 			<div className="grid-con">
 					<img className="img1" src="https://res.cloudinary.com/ajiva/image/upload/v1563881533/quikbuy/vans.jpg" alt="vans"/>

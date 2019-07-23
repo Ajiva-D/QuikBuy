@@ -10,7 +10,7 @@ import darksneakers from './../images/ecom/josh-marshall-tOYvXQiPCRs-unsplash-re
 import shinyheels from './../images/ecom/marcus-lewis-87DgFV9SOc4-unsplash-removebg-preview.png'
 import boyjean from './../images/ecom/santosh-verma-i49yJtWD57w-unsplash-removebg-preview.png'
 import smallamazon from './../images/ecom/status-quack-db4jrNvZhOQ-unsplash-removebg-preview.png'
-
+import Fade from 'react-reveal/Fade';
 
 class PopularItems extends Component {
 	constructor(){
@@ -81,10 +81,11 @@ class PopularItems extends Component {
 		return (
 			<div >
 				<h1 style={{textAlign:"center"}}>Popular Items</h1>
+				<Fade bottom>
 				<div style={style}>
 				{	item.map((e)=><Card img={e.img} title={e.title} amount={e.amount} key={e.title}/>)}
 				</div>
-				
+				</Fade>
 			</div>
 		);
 	}
