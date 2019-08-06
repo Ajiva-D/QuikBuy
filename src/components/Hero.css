@@ -20,7 +20,7 @@ height:90vh;
 	
 }
 .empty h1{
-	font-size:100px;
+	font-size:80px;
 	position: absolute;
 	left:10%;
 	top:-40px;
@@ -31,7 +31,7 @@ height:90vh;
 }
 .grid-con{
 	position:absolute;
-	left:20%;
+	left:26%;
 	top:36%;
 	display:grid;
 	grid-template-areas: "img1 ."
@@ -43,8 +43,8 @@ height:90vh;
 	
 }
 .grid-con img{
-	height:150px;
-	width:150px;
+	height:120px;
+	width:120px;
 }
 .img1{
 	grid-area: img1;
@@ -59,25 +59,25 @@ height:90vh;
 	grid-area: img4;
 }
 @media only screen and  (max-width:768px){
-.grid-con{
-	display:none;
-}
-.empty{
-	display: none;
-}
+	.grid-con{
+		display:none;
+	}
+	.empty{
+		display: none;
+	}
 	.hero-bg{
-		width:100%;
-		
-		}
-		img{
 			width:100%;
-		}
-		.hero{
-			flex-direction: column-reverse;
 			
-		}
+	}
+	img{
+		width:100%;
+	}
+	.hero{
+		flex-direction: column-reverse;
+				
+	}
 }
-@media only screen and (min-width:769px) and (max-width:1240px){
+@media only screen and (min-width:769px) and (max-width:1200px){
 	.empty h1{
 		font-size:70px;
 		left:13%;
