@@ -6,7 +6,7 @@ import "./Hero.css";
 // import redbag from './../images/redbag.jpg'
 // import sneakers from './../images/hotsneakers.jpg'
 import { Image, Video, Transformation, CloudinaryContext } from "cloudinary-react";
-import bg from "./../images/ecom/Dp3Pl_JWkAEkqJL.jpg";
+import bg from "./../images/ladybg.jpg";
 import one from "./../images/fs-1.jpg";
 import two from "./../images/fs-2.jpg";
 import three from "./../images/fs-3.jpg";
