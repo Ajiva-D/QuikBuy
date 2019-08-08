@@ -9,7 +9,7 @@
 	padding: 0;
 	height:250px;
 }
-.card h5{
+ h1,h5{
 	font-family: 'Average Sans', sans-serif;
 	font-size:1.5rem;
 }
@@ -20,6 +20,6 @@ h5,p{
 	display: inline-block;
 	padding:0 10px;
 }
-.card p{
+ p{
 	font-family: 'Changa', sans-serif;
 }
