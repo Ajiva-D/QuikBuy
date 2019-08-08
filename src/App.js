@@ -32,52 +32,62 @@ class App extends React.Component {
 			{
 				img: sneakers,
 				title: "Nike Sneakers",
-				amount: 3000
+				amount: 3000,
+				rating:3
 			},
 			{
 				img: purpleshoes,
 				title: "Purple Sneakers",
-				amount: 1000
+				amount: 1000,
+				rating:1
 			},
 			{
 				img: bluebag,
 				title: "Avion Bag",
-				amount: 150
+				amount: 150,
+				rating:4
 			},
 			{
 				img: blueshoe,
 				title: "Female Shoes",
-				amount: 2300
+				amount: 2300,
+				rating:5
 			},
 			{
 				img: girljean,
 				title: "Female Jeans",
-				amount: 4300
+				amount: 4300,
+				rating:5
 			},
 			{
 				img: fullamazon,
 				title: "Amazon Home",
-				amount: 6500
+				amount: 6500,
+				rating:5
 			},
 			{
 				img: darksneakers,
 				title: "Nike AirMax",
-				amount: 1000
+				amount: 1000,
+				rating:4
 			},
 			{
 				img: shinyheels,
 				title: "Glitter Heels",
-				amount: 800
+				amount: 800,
+				rating:2
 			},
 			{
 				img: boyjean,
 				title: "Jean Jacket",
-				amount: 300
+				amount: 300,
+				rating:3
 			},
 			{
 				img: smallamazon,
 				title: "Amazon Speaker",
-				amount: 1200
+				amount: 1200,
+				rating:5
 			}
 		];
 		return (

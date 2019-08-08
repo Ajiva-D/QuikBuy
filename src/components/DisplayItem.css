@@ -55,3 +55,7 @@ button{
 	font-family: 'Changa', sans-serif;
 	margin-left:10px;
 }
+
+.ratings-con{
+	display: flex;
+}
