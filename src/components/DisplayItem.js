@@ -14,7 +14,7 @@ class DisplayItem extends React.Component {
 	handleRatings(){
 		let rate=[]
 		for(let i = 0; i<this.props.item.rating; i++){
-				rate.push(<Ratings/>)
+				rate.push(<Ratings star="fas fa-star"/>)
 		}
 		return rate;
 	}
@@ -34,8 +34,17 @@ class DisplayItem extends React.Component {
 							This item is a limited edition item with exciting bluff. It has cuting
 							edge tech installed and would be a favourite in the market.
 						</p>
-						<div className="ratings-con">
+						<div className="rating-body">
+						<div className="ratings-con default-rating">
+								<Ratings star="far fa-star"/>
+								<Ratings star="far fa-star"/>
+								<Ratings star="far fa-star"/>
+								<Ratings star="far fa-star"/>
+								<Ratings star="far fa-star"/>						
+						</div>
+						<div className="ratings-con" id="main-rating">
 							{this.handleRatings()}
+						</div>
 						</div>
 						<form>
 							<input type="number" />

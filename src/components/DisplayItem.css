@@ -59,3 +59,11 @@ button{
 .ratings-con{
 	display: flex;
 }
+
+.rating-body{
+	position:relative;
+}
+#main-rating{
+	position:absolute;
+	top:0;
+}

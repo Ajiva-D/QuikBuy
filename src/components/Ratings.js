@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Ratings = ()=>{
+const Ratings = (props)=>{
 	return(
 		<div>
-			<i className="fas fa-star"></i>
+		<i className={props.star}></i>
 		</div>
 	)
 }
