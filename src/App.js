@@ -33,61 +33,71 @@ class App extends React.Component {
 				img: sneakers,
 				title: "Nike Sneakers",
 				amount: 3000,
-				rating:3
+				rating:3, 
+				description: "This sweet shoe ride is just so great ad goes with just anything. The Cream color makes it blend and its spring under heels make you feel like you're floating"
 			},
 			{
 				img: purpleshoes,
 				title: "Purple Sneakers",
 				amount: 1000,
-				rating:1
+				rating:1,
+				description: "Purple Sneakers that feel amazingly comfortable"
 			},
 			{
 				img: bluebag,
 				title: "Avion Bag",
 				amount: 150,
-				rating:4
+				rating:4,
+				description: "The Avion bag is so popular with the female celebrities is. It's a great accessory to have"
 			},
 			{
 				img: blueshoe,
 				title: "Female Shoes",
 				amount: 2300,
-				rating:5
+				rating:5,
+				description: "Yes, it's what is. Nothing Else to be said"
 			},
 			{
 				img: girljean,
 				title: "Female Jeans",
 				amount: 4300,
-				rating:5
+				rating:5,
+				description: "Female Complete up to down jean with excellent design. Every Girl would love this"
 			},
 			{
 				img: fullamazon,
 				title: "Amazon Home",
 				amount: 6500,
-				rating:5
+				rating:5,
+				description: "The Ultimate Virtual Assistant. She has everything covered, if you need your life sorted then it's a must have for you. DOn't book that flight late again!"
 			},
 			{
 				img: darksneakers,
 				title: "Nike AirMax",
 				amount: 1000,
-				rating:4
+				rating:4,
+				description: "The Air MAx has never looked better, A sleek design that allows comfort and swag at once"
 			},
 			{
 				img: shinyheels,
 				title: "Glitter Heels",
 				amount: 800,
-				rating:2
+				rating:2,
+				description: "Female Glittery heels that spark of glory and essence. Walk with optimal confidence."
 			},
 			{
 				img: boyjean,
 				title: "Jean Jacket",
 				amount: 300,
-				rating:3
+				rating:3,
+				description: "Male Blue Denim jacket. Absolutely fantastic for this winter weather."
 			},
 			{
 				img: smallamazon,
 				title: "Amazon Speaker",
 				amount: 1200,
-				rating:5
+				rating:5,
+				description: "Amazon Speaker that gives you that sound you are looking for. Increadibly loud and huge bass performance. An instant favourite"
 			}
 		];
 		return (
