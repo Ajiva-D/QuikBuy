@@ -19,7 +19,7 @@ class Header extends React.Component{
 	return (
 		<header>
 			<nav>
-				<a className="logo" href="home">QuikBuy</a>
+				<a className="logo" href="/">QuikBuy</a>
 				<div className="menu" onClick={this.changeClass}>
 				<i className="fas fa-bars"></i>
 				</div>
