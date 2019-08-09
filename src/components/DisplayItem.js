@@ -31,8 +31,7 @@ class DisplayItem extends React.Component {
 						<h1>{this.props.item.title}</h1>
 						<p>${this.props.item.amount}</p>
 						<p className="p-text">
-							This item is a limited edition item with exciting bluff. It has cuting
-							edge tech installed and would be a favourite in the market.
+							{this.props.item.description	}
 						</p>
 						<div className="rating-body">
 						<div className="ratings-con default-rating">
