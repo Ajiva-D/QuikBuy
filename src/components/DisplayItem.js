@@ -46,7 +46,7 @@ class DisplayItem extends React.Component {
 						</div>
 						</div>
 						<form>
-							<input type="number" />
+							<input type="number" min="0" />
 							<button>Add to Cart</button>
 						</form>
 					</div>
