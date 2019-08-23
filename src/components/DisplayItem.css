@@ -55,7 +55,10 @@ button{
 	font-family: 'Changa', sans-serif;
 	margin-left:10px;
 }
-
+input{
+	font-size:20px;
+	text-align: center;
+}
 .ratings-con{
 	display: flex;
 }
@@ -66,4 +69,28 @@ button{
 #main-rating{
 	position:absolute;
 	top:0;
+}
+
+@media only screen and  (max-width:768px){
+	.display-item{
+		flex-direction: column;
+		height:auto;
+		margin: auto;
+	}
+
+	.display-item > div{
+		width:100%;
+	}
+
+	.item-info > div{
+		padding:0 1rem;
+	}
+	
+	input{
+		width:50px;
+	}
+	form{
+		margin:0 auto;
+		width:90%;
+	}
 }
