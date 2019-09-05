@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import {Link, BrowserRouter as Router} from 'react-router-dom'
 
 
 class Header extends React.Component{
@@ -23,15 +24,16 @@ class Header extends React.Component{
 				<div className="menu" onClick={this.changeClass}>
 				<i className="fas fa-bars"></i>
 				</div>
+				
 				<ul className={ `nav-item-con ${this.state.condition ? "show-menu" : ""}`}>
 					<li>
 						<a href="women">WOMEN</a>
 					</li>
 					<li>
-						<a href="men">MEN</a>
+						<Link to="/men">MEN</Link>
 					</li>
 					<li>
-						<a href="sale">SALE</a>
+						<Link to="/cart">SALE</Link>
 					</li>
 					<li>
 						<a href="brands">BRANDS</a>
@@ -51,6 +53,7 @@ class Header extends React.Component{
 						<i className="material-icons">lock_outline</i>
 					</li>
 				</ul>
+				
 			</nav>
 		</header>
 	);

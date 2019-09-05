@@ -29,7 +29,7 @@ class PopularItems extends Component {
 				<h1 style={{textAlign:"center"}}>Popular Items</h1>
 				<Fade bottom>
 				<div style={style}>
-				{	this.props.item.map((e)=><Link to={`/${e.title}`} key={e.title}><Card img={e.img} title={e.title} amount={e.amount} click={()=>this.handleItemClick(e)}/></Link>)}
+				{	this.props.item.map((e)=><Link to={`/item/${e.title}`} key={e.title}><Card img={e.img} title={e.title} amount={e.amount} click={()=>this.handleItemClick(e)}/></Link>)}
 				</div>
 				</Fade>
 			</div>

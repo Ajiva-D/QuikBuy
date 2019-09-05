@@ -1,0 +1,21 @@
+.cart-img{
+	width:100px;
+	height: 100px;
+	border: 1px solid grey;
+	margin-right:20px;
+	border-radius: 6px;
+}
+
+.cart-con{
+	display: flex;
+	border:1px solid blue;
+	padding:30px 100px;
+}
+
+.cart{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:80px;
+
+}
