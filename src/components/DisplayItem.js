@@ -14,9 +14,18 @@ class DisplayItem extends React.Component {
 	handleRatings(){
 		let rate=[]
 		for(let i = 0; i<this.props.item.rating; i++){
-				rate.push(<Ratings star="fas fa-star"/>)
+				rate.push(<Ratings star="fas fa-star" key={i}/>)
 		}
 		return rate;
+	}
+	handlePropsAddToCart(){
+		const product = {
+			title : this.props.item.title,
+			amount : this.props.item.amount,
+			image : this.props.item.img
+		}
+		this.props.onAddToCart(product)
+		console.log(`The product:${product.title}`)
 	}
 	render(){ 
 	return (
@@ -46,8 +55,8 @@ class DisplayItem extends React.Component {
 						</div>
 						</div>
 						<form>
-							<input type="number" min="0" />
-							<button>Add to Cart</button>
+							<input type="number" min="1" defaultValue="1"onChange={console.log("change")} />
+							<button onClick={(props)=>this.handlePropsAddToCart(props)} type="button">Add to Cart</button>
 						</form>
 					</div>
 				</div>

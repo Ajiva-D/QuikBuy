@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import moduleName from "./components/DisplayItem";
 import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
 import DisplayItem from "./components/DisplayItem";
+import Cart from "./components/cart"
 import sneakers from "./images/whitesneakers.png";
 import purpleshoes from "./images/purpleshoes.png";
 import bluebag from "./images/bluebag.png";
@@ -20,12 +21,21 @@ class App extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			item : ""
+			item : "",
+			cart: ""
 		}
-		this.handleKeyChange = this.handleKeyChange.bind(this)
+		this.handleKeyChange = this.handleKeyChange.bind(this);
+		this.handleAddToCart = this.handleAddToCart.bind(this);
 	}
 	handleKeyChange(value){
 		this.setState({item:value});
+		console.log(`item: ${this.state.item}`)
+	}
+	handleAddToCart(value){
+		// console.log(value)
+		//  this.setState({cart : [...this.state.cart, value]});
+		this.setState({cart:value.title});
+		console.log(`cart: ${this.state.cart}`);
 	}
 	render() {
 		let item = [
@@ -102,19 +112,27 @@ class App extends React.Component {
 		];
 		return (
 			<div className="App">
-				<Header />
+				
+			
 				<Router>
+				<Header />
 					<Route
 						exact
 						path="/"
 						render={routeProps => <Home {...routeProps} item={item} onKeyChange={this.handleKeyChange}/>}
 					/>
+					
 					<Route
-						exact
-						path="/:title"
-						render={routeProps => <DisplayItem {...routeProps} item={this.state.item} />}
+						path="/item/:title"
+						render={routeProps => <DisplayItem {...routeProps} item={this.state.item} onAddToCart={this.handleAddToCart}/>}
 					/>
+						<Route
+						path="/cart"
+						render={routeProps => <Cart {...routeProps} cart={this.state.cart}/>}
+					/>
+
 				</Router>
+			
 			</div>
 		);
 	}
