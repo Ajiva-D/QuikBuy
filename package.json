@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "cloudinary-react": "^1.1.4",
+    "dotenv": "^8.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-reveal": "^1.2.2",

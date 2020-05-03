@@ -25,22 +25,22 @@ const Hero = () => {
 
 				<div className="grid-con">
 					
-						{/* <Image cloudName="ajiva" className="img1" publicId="quikbuy/hotsneakers.jpg">
+						<Image cloudName="ajiva" className="img1" publicId="quikbuy/fs-1.jpg">
 							<Transformation quality="auto" fetchFormat="auto" />
 						</Image>
-						<Image cloudName="ajiva" className="img2" publicId="quikbuy/jeanjacket.jpg">
+						<Image cloudName="ajiva" className="img2" publicId="quikbuy/fs-2.jpg">
 							<Transformation quality="auto" fetchFormat="auto" />
 						</Image>
-						<Image cloudName="ajiva" className="img3" publicId="quikbuy/vans.jpg">
+						<Image cloudName="ajiva" className="img3" publicId="quikbuy/fs-3.jpg">
 							<Transformation quality="auto" fetchFormat="auto" />
 						</Image>
-						<Image cloudName="ajiva" className="img4" publicId="quikbuy/redbag.jpg">
+						<Image cloudName="ajiva" className="img4" publicId="quikbuy/fs-4.jpg">
 							<Transformation quality="auto" fetchFormat="auto" />
-						</Image> */}
-						<img className="img1" src={one} alt=""/>
+						</Image>
+						{/* <img className="img1" src={one} alt=""/>
 						<img className="img2" src={two} alt=""/>
 						<img className="img3" src={three} alt=""/>
-						<img className="img4" src={four} alt=""/>
+						<img className="img4" src={four} alt=""/> */}
 				</div>
 			</div>
 			<div className="hero-bg">
