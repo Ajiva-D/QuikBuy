@@ -16,6 +16,7 @@ import darksneakers from "./images/ecom/josh-marshall-tOYvXQiPCRs-unsplash-remov
 import shinyheels from "./images/ecom/marcus-lewis-87DgFV9SOc4-unsplash-removebg-preview.png";
 import boyjean from "./images/ecom/santosh-verma-i49yJtWD57w-unsplash-removebg-preview.png";
 import smallamazon from "./images/ecom/status-quack-db4jrNvZhOQ-unsplash-removebg-preview.png";
+require('dotenv').config()
 
 class App extends React.Component {
 	constructor() {
